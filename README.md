@@ -25,6 +25,12 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
   <img src="Data/Total Orders by Month.png" width="300" height="210" />
 </p>
 
+<p align="center">
+  <img src="Data/Sales Growth Percentage.png" width="300" height="210" />
+  <img src="Data/AOV Growth Percentage.png" width="300" height="210" />
+  <img src="Data/Order Growth Percentage.png" width="300" height="210" />
+</p>
+
 **Key Product Performance**
 
 - The Macbook Pro Laptop, with its high AOV of $1,700, drives a large portion of revenue, making it a key focus for Tech Haven’s growth strategy.
