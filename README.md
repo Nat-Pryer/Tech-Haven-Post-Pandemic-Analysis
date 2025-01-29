@@ -19,7 +19,7 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 - Tech Haven shows seasonality, with peak sales in December and the lowest sales in February
 
 <p align="center">
-  <img src="Data/Sales Trends and Growth Rates (Even Larger).png" style="margin-bottom: 20px;" />
+  <img src="Data/WWWWWWWWWWWWWWW.png" style="margin-bottom: 20px;" />
 
 <p align="center">
     <strong>Monthly Metrics and Growth Rates Per Year</strong>
