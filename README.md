@@ -62,11 +62,26 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 - While AOV growth for loyalty customers remained positive in 2021 and 2022, it declined by 4.24% in 2023, suggesting possible challenges in increasing customer spending.
 
 - Both loyalty and nonloyalty segments experienced order count declines in 2023, with nonloyalty seeing a steeper drop of 35.23%, emphasizing the need for a strategic focus on both segments to maintain order volume.
+
+<p align="center">
+  <img src="Data/Loyalty Program Performance (No Grid).png" />
+</p>
+
+<p align="center">
+    <strong>Monthly Metrics and Growth Rates Per Year</strong>
+
+<p align="center">
+  <img src="Data/Total Revenue by Month (Loyalty Program).png" width="300" height="210" />
+  <img src="Data/AOV by Month (Loyalty Program).png" width="300" height="210" />
+  <img src="Data/Total Orders by Month (Loyalty Program).png" width="300" height="210" />
+</p>
+
 **Purchase Platform**
 
 - The mobile app accounts for only 4.98% of total sales, indicating a need for improvements to attract more customers to this platform.
 
 - With the website generating 95.02% of total sales, efforts should focus on enhancing the mobile app to capture a larger share of the market and diversify revenue streams.
+
 
 **Refund Rate Trends**
 
@@ -78,12 +93,5 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 
 - With each passing year, the gap between loyalty and non-loyalty refund rates widens, reinforcing the idea that investing in customer loyalty programs not only strengthens customer retention but also encourages more thoughtful purchasing behavior, reducing returns.
 
-<p align="center">
-    <strong>Monthly Metrics and Growth Rates Per Year</strong>
 
-<p align="center">
-  <img src="Data/Total Revenue by Month (Loyalty Program).png" width="300" height="210" />
-  <img src="Data/AOV by Month (Loyalty Program).png" width="300" height="210" />
-  <img src="Data/Total Orders by Month (Loyalty Program).png" width="300" height="210" />
-</p>
 
