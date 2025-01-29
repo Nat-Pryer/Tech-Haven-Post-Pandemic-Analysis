@@ -77,3 +77,13 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 - The significant reduction in refund counts for loyalty members—falling from 1,182 in 2020 to just 279 in 2023—points to the success of the loyalty program in fostering customer trust and potentially better-targeted product offerings.
 
 - With each passing year, the gap between loyalty and non-loyalty refund rates widens, reinforcing the idea that investing in customer loyalty programs not only strengthens customer retention but also encourages more thoughtful purchasing behavior, reducing returns.
+
+<p align="center">
+    <strong>Monthly Metrics and Growth Rates Per Year</strong>
+
+<p align="center">
+  <img src="Data/Total Revenue by Month (Loyalty Program).png" width="300" height="210" />
+  <img src="Data/AOV by Month (Loyalty Program).png" width="300" height="210" />
+  <img src="Data/Total Orders by Month (Loyalty Program).png" width="300" height="210" />
+</p>
+
