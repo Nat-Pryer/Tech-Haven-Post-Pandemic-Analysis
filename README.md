@@ -47,6 +47,10 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 - Low-margin accessories like USB-C Charging Cables and Wired Headphones, with high order volumes, present opportunities for repeat purchases and customer loyalty programs.
 
 - The Bose SoundSport Headphone’s high refund rate suggests potential issues with product quality or customer satisfaction, warranting investigation to reduce returns.
+
+<img src="Data/Product Performance (Even Larger).png" />
+
+
 **Loyalty Program Performance**
 
 - Loyalty program sales saw a significant decline, dropping by 25.94% from 2022 to 2023, highlighting the need for stronger customer retention strategies.
