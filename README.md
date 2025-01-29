@@ -26,7 +26,7 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 </p>
 
 <p align="center">
-  <img src="Data/Sales Growth Percentage (Larger).png" width="300" height="210" />
+  <img src="Data/Sales Growth Percentage (Even Larger).png" width="300" height="210" />
   <img src="Data/AOV Growth Percentage.png" width="300" height="210" />
   <img src="Data/Order Growth Percentage.png" width="300" height="210" />
 </p>
