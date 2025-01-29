@@ -10,7 +10,6 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 
 ![Tech Haven ERD](https://github.com/user-attachments/assets/aef2ba03-11d9-4e80-bd39-9ca2bb4d3c68)
 
-
 # Insights Deep-Dive
 
 **Sales Trends and Growth Rates**
@@ -18,6 +17,12 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 - Tech Haven averages $8.7 million in sales and 53,420 orders each year
 - Sales surged in 2020 due to the pandemic, but declined by 38% by 2022
 - Tech Haven shows seasonality, with peak sales in December and the lowest sales in February
+
+<p align="center">
+  <img src="Data/Sales Trends and Growth Rates (Even Larger).png" style="margin-bottom: 20px;" />
+
+<p align="center">
+    <strong>Monthly Metrics and Growth Rates Per Year</strong>
 
 <p align="center">
   <img src="Data/Total Sales by Month.png" width="300" />
