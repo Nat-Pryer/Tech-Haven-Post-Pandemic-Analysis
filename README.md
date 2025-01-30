@@ -69,9 +69,9 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
     <strong>Monthly Metrics and Growth Rates Per Year</strong>
 
 <p align="center">
-  <img src="Data/Total Revenue by Month (Loyalty Program).png" width="300" height="210" />
-  <img src="Data/AOV by Month (Loyalty Program).png" width="300" height="210" />
-  <img src="Data/Total Orders by Month (Loyalty Program).png" width="300" height="210" />
+  <img src="Data/Total Revenue by Month (Loyalty Program).png" width="250" height="210" />
+  <img src="Data/AOV by Month (Loyalty Program).png" width="250" height="210" />
+  <img src="Data/Total Orders by Month (Loyalty Program).png" width="250" height="210" />
 </p>
 
 **Purchase Platform**
