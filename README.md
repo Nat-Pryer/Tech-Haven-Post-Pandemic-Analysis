@@ -25,9 +25,15 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
     <strong>Monthly Metrics and Growth Rates Per Year</strong>
 
 <p align="center">
-  <img src="Data/Total Sales by Month.png" width="300" />
-  <img src="Data/AOV by Month.png" width="300" />
-  <img src="Data/Total Orders by Month.png" width="300" height="210" />
+  <div style="display:inline-block">
+    <img src="Data/Total Sales by Month.png" width="300" />
+  </div>
+  <div style="display:inline-block">
+    <img src="Data/AOV by Month.png" width="300" />
+  </div>
+  <div style="display:inline-block">
+    <img src="Data/Total Orders by Month.png" width="300" height="210" />
+  </div>
 </p>
 
 <p align="center">
