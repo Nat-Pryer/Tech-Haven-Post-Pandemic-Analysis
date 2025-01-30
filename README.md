@@ -6,7 +6,7 @@ Tech Haven, an e-commerce company founded in 2019, specializes in selling popula
 
 # Executive Summary
 
-Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue significantly dropping since 2020.  Macbook Pro Laptops account for about a quarter of all revenue. Tech Haven can benefit from expanding top product lines, optimizing bundling, and enhancing loyalty programs to increase customer lifetime value. Improvements to the mobile app will strengthen Tech Haven's market position and drive sustainable growth.
+Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual revenue significantly dropping since 2020.  Macbook Pro Laptops account for almost a quarter of all revenue. Tech Haven can benefit from expanding top product lines, optimizing bundling, and enhancing loyalty programs to increase customer lifetime value. Improvements to the mobile app will strengthen Tech Haven's market position and drive sustainable growth.
 
 ![Tech Haven ERD](https://github.com/user-attachments/assets/aef2ba03-11d9-4e80-bd39-9ca2bb4d3c68)
 
