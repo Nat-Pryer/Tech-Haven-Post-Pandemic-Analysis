@@ -17,6 +17,7 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 - Tech Haven averages $8.7 million in sales and 53,420 orders each year
 - Sales surged in 2020 due to the pandemic, but declined by 38% by 2022
 - Tech Haven shows seasonality, with peak sales in December and the lowest sales in February
+- California brings in the most revenue, accounting for 13.2% of the total, followed by Texas (7.1%) and Florida (6.3%)
 
 <p align="center">
   <img src="Data/WWWWWWWWWWWWWWW.png" style="margin-bottom: 20px;" />
