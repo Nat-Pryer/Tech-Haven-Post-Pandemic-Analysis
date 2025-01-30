@@ -82,6 +82,10 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 
 - With the website generating 95.02% of total sales, efforts should focus on enhancing the mobile app to capture a larger share of the market and diversify revenue streams.
 
+<p align="center">
+  <img src="Data/Purchase Platform.png" />
+</p>
+
 
 **Refund Rate Trends**
 
