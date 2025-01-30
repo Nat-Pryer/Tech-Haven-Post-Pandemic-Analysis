@@ -97,5 +97,7 @@ Tech Haven's sales analysis of 190k orders across 2020-2024 shows annual revenue
 
 - With each passing year, the gap between loyalty and non-loyalty refund rates widens, reinforcing the idea that investing in customer loyalty programs not only strengthens customer retention but also encourages more thoughtful purchasing behavior, reducing returns.
 
-
+<p align="center">
+  <img src="Data/Loyalty Program Impact on Refund Rates.png" />
+</p>
 
