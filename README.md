@@ -56,11 +56,11 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 - Despite the loyalty sales drop, nonloyalty sales have maintained a more consistent performance, with a 5% decrease in sales growth in 2023.
 
-- Customers in the loyalty program consistently spend more, with an average order value (AOV) consistently higher than nonloyalty customers, indicating stronger purchase behavior.
+- The AOV for loyalty customers ($161) and nonloyalty customers ($163) is similar, suggesting the company should focus on creating better deals for loyalty customers to encourage higher spending
 
 - While AOV growth for loyalty customers remained positive in 2021 and 2022, it declined by 4.24% in 2023, suggesting possible challenges in increasing customer spending.
 
-- Both loyalty and nonloyalty segments experienced order count declines in 2023, with nonloyalty seeing a steeper drop of 35.23%, emphasizing the need for a strategic focus on both segments to maintain order volume.
+- From 2020 to 2023, orders from both loyalty and nonloyalty customers declined almost the same at 44%
 
 <p align="center">
   <img src="Data/Loyalty Program Performance (No Grid).png" />
@@ -77,12 +77,12 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 **Purchase Platform**
 
-- The mobile app accounts for only 4.98% of total sales, indicating a need for improvements to attract more customers to this platform.
+- The mobile app accounts for only 8.82% of total sales, indicating a need for improvements to attract more customers to this platform.
 
-- With the website generating 95.02% of total sales, efforts should focus on enhancing the mobile app to capture a larger share of the market and diversify revenue streams.
+- The website has a moderately higher AOV of $166 compared to the mobile app's $148, indicating customers tend to make smaller, quicker purchases on the app.
 
 <p align="center">
-  <img src="Data/Purchase Platform.png" />
+  <img src="Data/Purchase Platform (Better One).png" />
 </p>
 
 
