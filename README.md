@@ -86,15 +86,13 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 **Refund Rate Trends**
 
-- Loyalty members show a clear trend of lower refund rates compared to non-loyalty customers, indicating that membership in the program correlates with better product satisfaction or improved purchase confidence.
+- The refund rate in 2020 was notably higher than in any of the following years.
 
-- Over the years, refund rates have steadily declined for both loyalty and non-loyalty customers, with loyalty members leading the improvement. This suggests that Tech Haven's strategies for customer retention and satisfaction may be effectively reducing dissatisfaction over time.
+- While the refund rate declined for nonloyalty customers each year, it varied more for loyalty customers.
 
-- The significant reduction in refund counts for loyalty members—falling from 1,182 in 2020 to just 279 in 2023—points to the success of the loyalty program in fostering customer trust and potentially better-targeted product offerings.
-
-- With each passing year, the gap between loyalty and non-loyalty refund rates widens, reinforcing the idea that investing in customer loyalty programs not only strengthens customer retention but also encourages more thoughtful purchasing behavior, reducing returns.
+- The overall refund rate for loyalty customers (4.2%) is higher than for nonloyalty customers (3.6%), though nonloyalty customers had a higher refund rate in both 2020 and 2021.
 
 <p align="center">
-  <img src="Data/Loyalty Program Impact on Refund Rates.png" />
+  <img src="Data/Loyalty Program Impact on Refund Rates (Better One).png" />
 </p>
 
