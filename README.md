@@ -52,18 +52,16 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 **Loyalty Program Performance**
 
-- Loyalty program sales saw a significant decline, dropping by 25.94% from 2022 to 2023, highlighting the need for stronger customer retention strategies.
+- Loyalty sales have seen a major drop of 66.8% from 2020 to 2023, while nonloyalty sales have only decreased by 36.8% over the same time period.
 
-- Despite the loyalty sales drop, nonloyalty sales have maintained a more consistent performance, with a 5% decrease in sales growth in 2023.
+- Orders from both loyalty and nonloyalty customers decreased in line with sales, with loyalty orders dropping by 66.7% and nonloyalty orders falling by 36.2%.
 
-- The AOV for loyalty customers ($161) and nonloyalty customers ($163) is similar, suggesting the company should focus on creating better deals for loyalty customers to encourage higher spending
+- The AOV for loyalty customers shows more fluctuation from year to year compared to nonloyalty customers.
 
-- While AOV growth for loyalty customers remained positive in 2021 and 2022, it declined by 4.24% in 2023, suggesting possible challenges in increasing customer spending.
-
-- From 2020 to 2023, orders from both loyalty and nonloyalty customers declined almost the same at 44%
+- Sales from both loyalty and nonloyalty customers dropped significantly in 2022, with loyalty customers experiencing a steeper decline of 46.4%.
 
 <p align="center">
-  <img src="Data/Loyalty Program Performance (No Grid).png" />
+  <img src="Data/Loyalty Program Performance (Better One).png" />
 </p>
 
 <p align="center">
