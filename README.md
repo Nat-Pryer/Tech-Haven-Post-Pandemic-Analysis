@@ -9,23 +9,23 @@ Table of Contents
     - [Key Product Performance](#key-product-performance)
     - [Customer Growth and Repeat Purchase Trends](#customer-growth-and-repeat-purchase-trends)
     - [Loyalty Program Performance](#loyalty-program-performance)
-    - [Sales by Platforms & Channels](#purchase-platform)
+    - [Purchase Platform](#purchase-platform)
     - [Refund Rate Trends](#refund-rate-trends)
 - [Recommendations](#recommendations)
 
-# Project Background
+## Project Background
 
 Tech Haven, an e-commerce company founded in 2019, specializes in selling popular electronics like Apple, Samsung, and ThinkPad products. I'm partnering with the Head of Operations to extract insights and deliver recommendations to improve performance across sales, product, and marketing teams.
 
-# Executive Summary
+## Executive Summary
 
 Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a significant drop in annual revenue, as revenue in 2023 is nearly half of what it was in 2020. The surge in sales during 2020 and 2021 can largely be attributed to the pandemic. High-AOV products like laptops continue to generate the most revenue, while lower-cost items such as charging cables and batteries have a higher order count, but contribute less to overall revenue. Customer retention is a concern as unique and repeat purchase rates have declined by 39% and 61%, respectively. By targeting growth in the Midwest and Northeast regions and improving digital channels like the mobile app, Tech Haven can enhance customer loyalty, strengthen its market position, and drive sustainable growth.
 
 ![Tech Haven ERD](https://github.com/user-attachments/assets/aef2ba03-11d9-4e80-bd39-9ca2bb4d3c68)
 
-# Insights Deep-Dive
+## Insights Deep-Dive
 
-**Sales Trends and Growth Rates**
+### Sales Trends and Growth Rates
 
 - Tech Haven averages $8.7 million in sales and 53,420 orders each year
 - Sales surged in 2020 due to the pandemic, but declined by 38% by 2022
@@ -48,7 +48,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
   <img src="Data/Order Growth Rate (No Grid).png" width="250" height="160" style="display:inline-block;" />
 </p>
 
-**Key Product Performance**
+### Key Product Performance
 
 - The Macbook Pro Laptop, with its high AOV of $1,700, accounts for nearly a quarter of all revenue
 
@@ -60,7 +60,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 <img src="Data/Product Performance (Even Larger).png" />
 
-**Customer Growth and Repeat Purchase Trends**
+### Customer Growth and Repeat Purchase Trends
 
 - Unique customers have steadily decreased from 55,742 in 2020 to 33,846 in 2023, showing a decline of about 39% over the four years.
 
@@ -72,7 +72,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 <img src="Data/Unique and Repeat Customer Table.png" />
 </p>
 
-**Loyalty Program Performance**
+### Loyalty Program Performance
 
 - Loyalty sales have seen a major drop of 66.8% from 2020 to 2023, while nonloyalty sales have only decreased by 36.8% over the same time period.
 
@@ -95,7 +95,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
   <img src="Data/Total Orders by Month (Loyalty Program).png" width="250" height="180" />
 </p>
 
-**Purchase Platform**
+### Purchase Platform
 
 - The mobile app accounts for only 8.82% of total sales, indicating a need for improvements to attract more customers to this platform.
 
@@ -106,7 +106,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 </p>
 
 
-**Refund Rate Trends**
+### Refund Rate Trends
 
 - The refund rate in 2020 was notably higher than in any of the following years.
 
@@ -118,7 +118,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
   <img src="Data/Loyalty Program Impact on Refund Rates (Better One).png" />
 </p>
 
-# Recommendations
+## Recommendations
 
 **Maximize Product Offerings**
 
