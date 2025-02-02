@@ -6,7 +6,7 @@ Tech Haven, an e-commerce company founded in 2019, specializes in selling popula
 
 # Executive Summary
 
-Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual revenue significantly dropping since 2020.  Macbook Pro Laptops account for almost a quarter of all revenue. Tech Haven can benefit from expanding top product lines, optimizing bundling, and enhancing loyalty programs to increase customer lifetime value. Improvements to the mobile app will strengthen Tech Haven's market position and drive sustainable growth.
+Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a significant drop in annual revenue, as revenue in 2023 is nearly half of what it was in 2020. The surge in sales during 2020 and 2021 can largely be attributed to the pandemic. High-AOV products like laptops continue to generate the most revenue, while lower-cost items such as charging cables and batteries have a higher order count, but contribute less to overall revenue. Customer retention is a concern as unique and repeat purchase rates have declined by 15% and 10%, respectively. By targeting growth in the Midwest and Northeast regions and improving digital channels like the mobile app, Tech Haven can enhance customer loyalty, strengthen its market position, and drive sustainable growth.
 
 ![Tech Haven ERD](https://github.com/user-attachments/assets/aef2ba03-11d9-4e80-bd39-9ca2bb4d3c68)
 
@@ -37,15 +37,13 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 **Key Product Performance**
 
-- The Macbook Pro Laptop, with its high AOV of $1,700, drives a large portion of revenue, making it a key focus for Tech Haven’s growth strategy.
+- The Macbook Pro Laptop, with its high AOV of $1,700, accounts for nearly a quarter of all revenue
 
-- There's a stark contrast between premium products like the Macbook Pro and budget items like AA Batteries, highlighting the need for better product bundling strategies.
+- The 27in 4K Gaming Monitor and Bose SoundSport Headphones both have notably higher refund rates, with 6.9% and 7.1%, respectively.
 
-- Products like the iPhone and ThinkPad Laptop show strong performance and should be targeted for additional marketing efforts to capture more market share.
+- Laptops and phones account for 62.9% of all revenue
 
-- Low-margin accessories like USB-C Charging Cables and Wired Headphones, with high order volumes, present opportunities for repeat purchases and customer loyalty programs.
-
-- The Bose SoundSport Headphone’s high refund rate suggests potential issues with product quality or customer satisfaction, warranting investigation to reduce returns.
+- Generally, products with the highest order count percentage tend to generate the lowest revenue.
 
 <img src="Data/Product Performance (Even Larger).png" />
 
@@ -56,7 +54,7 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 - Orders from both loyalty and nonloyalty customers decreased in line with sales, with loyalty orders dropping by 66.7% and nonloyalty orders falling by 36.2%.
 
-- The AOV for loyalty customers shows more fluctuation from year to year compared to nonloyalty customers.
+- The AOV for loyalty customers shows more fluctuation year to year compared to nonloyalty customers.
 
 - Sales from both loyalty and nonloyalty customers dropped significantly in 2022, with loyalty customers experiencing a steeper decline of 46.4%.
 
@@ -115,4 +113,12 @@ Tech Haven's sales analysis of about 214k orders across 2020-2023 shows annual r
 
 **Maintain Low Refund Rate**
 
--**Investigate the high refund rate for Bose SoundSport Headphones**: Analyze the factors behind the high return rate to identify potential quality or customer satisfaction issues and take steps to reduce future returns.
+- **Investigate the high refund rate for Bose SoundSport Headphones**: Analyze the factors behind the high return rate to identify potential quality or customer satisfaction issues and take steps to reduce future returns.
+
+**Optimize Purchase Platform**
+
+- **Enhance Mobile App Experience**: Improve the mobile app's checkout and personalization features to capitalize on rising mobile usage and increase its contribution to total sales.
+
+**Regional Growth Strategies**
+
+- **Focus on High Performing Regions**: Continue allocating resources to the South and West regions of the U.S. with regionalized marketing and product availability strategies tailored to local preferences.
