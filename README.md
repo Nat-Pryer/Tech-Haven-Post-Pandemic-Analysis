@@ -6,7 +6,7 @@ Tech Haven, an e-commerce company founded in 2019, specializes in selling popula
 
 # Executive Summary
 
-Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a significant drop in annual revenue, as revenue in 2023 is nearly half of what it was in 2020. The surge in sales during 2020 and 2021 can largely be attributed to the pandemic. High-AOV products like laptops continue to generate the most revenue, while lower-cost items such as charging cables and batteries have a higher order count, but contribute less to overall revenue. Customer retention is a concern as unique and repeat purchase rates have declined by 15% and 10%, respectively. By targeting growth in the Midwest and Northeast regions and improving digital channels like the mobile app, Tech Haven can enhance customer loyalty, strengthen its market position, and drive sustainable growth.
+Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a significant drop in annual revenue, as revenue in 2023 is nearly half of what it was in 2020. The surge in sales during 2020 and 2021 can largely be attributed to the pandemic. High-AOV products like laptops continue to generate the most revenue, while lower-cost items such as charging cables and batteries have a higher order count, but contribute less to overall revenue. Customer retention is a concern as unique and repeat purchase rates have declined by 39% and 61%, respectively. By targeting growth in the Midwest and Northeast regions and improving digital channels like the mobile app, Tech Haven can enhance customer loyalty, strengthen its market position, and drive sustainable growth.
 
 ![Tech Haven ERD](https://github.com/user-attachments/assets/aef2ba03-11d9-4e80-bd39-9ca2bb4d3c68)
 
@@ -46,6 +46,14 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 - Generally, products with the highest order count percentage tend to generate the lowest revenue.
 
 <img src="Data/Product Performance (Even Larger).png" />
+
+**Customer Growth and Repeat Purchase Trends**
+
+- Unique customers have steadily decreased from 55,742 in 2020 to 33,846 in 2023, showing a decline of about 39% over the four years.
+
+- Repeat customer numbers have also decreased, from 10,586 in 2020 to 4,119 in 2023, reflecting a decrease of approximately 61%.
+
+- The repeat rate has been consistently dropping each year, from 19.0% in 2020 to 12.2% in 2023, signaling a growing challenge in maintaining customer loyalty and encouraging repeat business.
 
 
 **Loyalty Program Performance**
@@ -98,7 +106,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 **Maximize Product Offerings**
 
-- **Expand High-Performing Categories**: Increase catalog variations in laptops and monitors to meet diverse customer needs with premium models, driving repeat purchases and solidifying market presence.
+- **Expand High-Performing Categories**: Increase catalog variations in laptops, phones, and monitors to meet diverse customer needs with premium models, driving repeat purchases and solidifying market presence.
 - **Consider bundling lower-revenue products with high-revenue products**: Reevaluate the pricing strategy of charging cables and batteries, bundle them with high-value items, or offer them as a promotional gift to increase average order value (AOV) and revenue contribution.
 
 **Customer Growth and Retention**
@@ -113,7 +121,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 **Maintain Low Refund Rate**
 
-- **Investigate the high refund rate for Bose SoundSport Headphones**: Analyze the factors behind the high return rate to identify potential quality or customer satisfaction issues and take steps to reduce future returns.
+- **Investigate Products with a High Refund Rate**: Analyze the factors behind the high return rate for products like the 27in 4K Gaming Monitor and the Bose SoundSport Headphones to identify potential quality or customer satisfaction issues and take steps to reduce future returns.
 
 **Optimize Purchase Platform**
 
