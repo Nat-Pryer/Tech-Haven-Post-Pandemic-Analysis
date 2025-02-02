@@ -1,5 +1,18 @@
 # Tech-Haven-Post-Pandemic-Analysis
 
+Table of Contents
+
+- [Project Background](#project-background)
+- [Executive Summary](#executive-summary)
+- [Insights Deep-Dive](#insights-deep-dive)
+    - [Sales Trends and Growth Rates](#sales-trends-and-growth-rates)
+    - [Key Product Performance](#key-product-performance)
+    - [Customer Growth and Repeat Purchase Trends](#customer-growth-and-repeat-purchase-trends)
+    - [Loyalty Program Performance](#loyalty-program-performance)
+    - [Sales by Platforms & Channels](#purchase-platform)
+    - [Refund Rate Trends](#refund-rate-trends)
+- [Recommendations](#recommendations)
+
 # Project Background
 
 Tech Haven, an e-commerce company founded in 2019, specializes in selling popular electronics like Apple, Samsung, and ThinkPad products. I'm partnering with the Head of Operations to extract insights and deliver recommendations to improve performance across sales, product, and marketing teams.
@@ -55,6 +68,9 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 - The repeat rate has been consistently dropping each year, from 19.0% in 2020 to 12.2% in 2023, signaling a growing challenge in maintaining customer loyalty and encouraging repeat business.
 
+<p align="center">
+<img src="Data/Unique and Repeat Customer Table.png" />
+</p>
 
 **Loyalty Program Performance**
 
