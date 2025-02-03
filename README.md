@@ -83,7 +83,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 - Sales from both loyalty and nonloyalty customers dropped significantly in 2022, with loyalty customers experiencing a steeper decline of 46.4%.
 
 <p align="center">
-  <img src="Data/Loyalty Program Performance (Better One).png" />
+  <img src="Data/Loyalty Program Performance.png" />
 </p>
 
 <p align="center">
