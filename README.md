@@ -102,7 +102,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 - The website has a moderately higher AOV of $166 compared to the mobile app's $148, indicating customers tend to make smaller, quicker purchases on the app.
 
 <p align="center">
-  <img src="Data/Purchase Platform (Better One).png" />
+  <img src="Data/Purchase Platform.png" />
 </p>
 
 
