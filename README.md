@@ -58,7 +58,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 - Generally, products with the highest order count percentage tend to generate the lowest revenue.
 
-<img src="Data/Product Performance (Even Larger).png" />
+<img src="Data/Product Performance.png" />
 
 ### Customer Growth and Repeat Purchase Trends
 
