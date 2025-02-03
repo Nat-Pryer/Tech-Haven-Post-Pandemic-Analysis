@@ -33,7 +33,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 - California brings in the most revenue, accounting for 13.2% of the total, followed by Texas (7.1%) and Florida (6.3%)
 
 <p align="center">
-  <img src="Data/WWWWWWWWWWWWWWW.png" style="margin-bottom: 20px;" />
+  <img src="Data/Sales Trends and Growth Rates.png" style="margin-bottom: 20px;" />
 
 <p align="center">
   <img src="Data/Total Sales by Month.png" width="250" height="190" style="display:inline-block; margin-right:10px;" />
