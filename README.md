@@ -44,7 +44,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 <p align="center">
   <img src="Data/Sales Growth Rate (No Grid).png" width="250" height="160" style="display:inline-block; margin-right:10px;" />
-  <img src="Data/AOV Growth Rate (No Grid).png" width="250" height="160" style="display:inline-block; margin-right:10px;" />
+  <img src="Data/AOV Growth Rate.png" width="250" height="160" style="display:inline-block; margin-right:10px;" />
   <img src="Data/Order Growth Rate (No Grid).png" width="250" height="160" style="display:inline-block;" />
 </p>
 
