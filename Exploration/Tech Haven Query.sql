@@ -2,153 +2,153 @@
 -- 1. What were the order counts, sales, and AOV for Macbooks sold in North America for each quarter across all years?
 
 SELECT 
-    YEAR(o.Purchase_TS) AS purchase_year,  -- Extract the year from the Purchase_TS column
-    DATEPART(QUARTER, o.Purchase_TS) AS purchase_quarter,  -- Extract the quarter from the Purchase_TS column
-    SUM(o.Quantity_Ordered) AS order_count,  -- Sum the Quantity_Ordered for the order count
-    SUM(o.Price_Each * o.Quantity_Ordered) AS total_sales,  -- Calculate total sales
-    ROUND(SUM(o.Price_Each * o.Quantity_Ordered) / SUM(o.Quantity_Ordered), 2) AS aov  -- Calculate average order value
-FROM [Tech Haven].dbo.Tech_Haven_Orders AS o  -- Specify the 'Tech Haven Orders' table and alias it as 'o'
-WHERE o.Product = 'Macbook Pro Laptop'  -- Filter to only include orders for 'Macbook Pro Laptop'
-GROUP BY YEAR(o.Purchase_TS), DATEPART(QUARTER, o.Purchase_TS)  -- Group the results by purchase year and quarter
-ORDER BY purchase_year, purchase_quarter;  -- Order by purchase year and then by purchase quarter
+    YEAR(o.Purchase_TS) AS purchase_year,
+    DATEPART(QUARTER, o.Purchase_TS) AS purchase_quarter,
+    SUM(o.Quantity_Ordered) AS order_count,
+    SUM(o.Price_Each * o.Quantity_Ordered) AS total_sales,
+    ROUND(SUM(o.Price_Each * o.Quantity_Ordered) / SUM(o.Quantity_Ordered), 2) AS aov
+FROM [Tech Haven].dbo.Tech_Haven_Orders AS o
+WHERE o.Product = 'Macbook Pro Laptop'
+GROUP BY YEAR(o.Purchase_TS), DATEPART(QUARTER, o.Purchase_TS)
+ORDER BY purchase_year, purchase_quarter;
 
 -- 2. How many Macbooks were ordered each month in 2020 through 2021, sorted from oldest to most recent month?
 
 SELECT 
-    YEAR(o.Purchase_TS) AS purchase_year,  -- Extract the year from the Purchase_TS column
-    MONTH(o.Purchase_TS) AS purchase_month,  -- Extract the month from the Purchase_TS column
-    SUM(o.Quantity_Ordered) AS total_macbooks_ordered  -- Sum the Quantity_Ordered for Macbook orders
-FROM [Tech Haven].dbo.Tech_Haven_Orders AS o  -- Specify the 'Tech Haven Orders' table and alias it as 'o'
-WHERE o.Product = 'Macbook Pro Laptop'  -- Filter to only include orders for 'Macbook Pro Laptop'
-    AND YEAR(o.Purchase_TS) BETWEEN 2020 AND 2021  -- Filter to only include orders from 2020 and 2021
-GROUP BY YEAR(o.Purchase_TS), MONTH(o.Purchase_TS)  -- Group by purchase year and purchase month
-ORDER BY purchase_year ASC, purchase_month ASC;  -- Order by purchase year and then by purchase month (oldest to most recent)
+    YEAR(o.Purchase_TS) AS purchase_year,
+    MONTH(o.Purchase_TS) AS purchase_month,
+    SUM(o.Quantity_Ordered) AS total_macbooks_ordered
+FROM [Tech Haven].dbo.Tech_Haven_Orders AS o
+WHERE o.Product = 'Macbook Pro Laptop'
+    AND YEAR(o.Purchase_TS) BETWEEN 2020 AND 2021
+GROUP BY YEAR(o.Purchase_TS), MONTH(o.Purchase_TS)
+ORDER BY purchase_year ASC, purchase_month ASC;
 
 -- 3. Return the purchase month, shipping month, time to ship (in days), and product name for each order placed in 2020.
 
 SELECT 
-    YEAR(o.Purchase_TS) AS purchase_year,        -- Extract the purchase year
-    MONTH(o.Purchase_TS) AS purchase_month,      -- Extract the purchase month
-    YEAR(os.Ship_TS) AS ship_year,               -- Extract the shipping year
-    MONTH(os.Ship_TS) AS ship_month,             -- Extract the shipping month
-    DATEDIFF(DAY, o.Purchase_TS, os.Ship_TS) AS time_to_ship,  -- Calculate the time difference between purchase and shipping in days
-    o.Product                                    -- Return the product name
+    YEAR(o.Purchase_TS) AS purchase_year,
+    MONTH(o.Purchase_TS) AS purchase_month,
+    YEAR(os.Ship_TS) AS ship_year,
+    MONTH(os.Ship_TS) AS ship_month,
+    DATEDIFF(DAY, o.Purchase_TS, os.Ship_TS) AS time_to_ship,
+    o.Product
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders AS o                  -- Tech Haven Orders table
+    [Tech Haven].dbo.Tech_Haven_Orders AS o
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Order_Status AS os           -- Tech Haven Order Status table
-    ON o.Order_ID = os.Order_ID                 -- Join the two tables on Order_ID
+    [Tech Haven].dbo.Tech_Haven_Order_Status AS os
+    ON o.Order_ID = os.Order_ID
 WHERE 
-    YEAR(o.Purchase_TS) = 2020                  -- Filter to only include orders from the year 2020
+    YEAR(o.Purchase_TS) = 2020
 ORDER BY 
-    purchase_year, purchase_month;              -- Sort by purchase year and purchase month
+    purchase_year, purchase_month;
 
 -- 4. What is the average order value per year for products that are either phones or headphones?
 
 SELECT 
-    YEAR(Purchase_TS) AS purchase_year,                  -- Extract the purchase year
-    ROUND(SUM(Price_Each * Quantity_Ordered) / COUNT(DISTINCT Order_ID), 2) AS avg_order_value -- Calculate AOV per year
+    YEAR(Purchase_TS) AS purchase_year,
+    ROUND(SUM(Price_Each * Quantity_Ordered) / COUNT(DISTINCT Order_ID), 2) AS avg_order_value
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders                               -- Tech Haven Orders table
+    [Tech Haven].dbo.Tech_Haven_Orders
 WHERE 
-    Product LIKE '%phone%' OR Product LIKE '%headphone%' -- Filter for products that are phones or headphones
+    Product LIKE '%phone%' OR Product LIKE '%headphone%'
 GROUP BY 
-    YEAR(Purchase_TS)                                    -- Group the results by purchase year
+    YEAR(Purchase_TS)
 ORDER BY 
-    purchase_year;                                      -- Order the results by purchase year
+    purchase_year;
 
 -- 5. How many people used the mobile app vs the website as a purchase platform?
 
 SELECT 
-    Purchase_Platform,                                 -- Select the Purchase Platform (Mobile App or Website)
-    COUNT(DISTINCT Customer_ID) AS customer_count       -- Count the distinct number of customers
+    Purchase_Platform,
+    COUNT(DISTINCT Customer_ID) AS customer_count
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders                               -- Tech Haven Orders table
+    [Tech Haven].dbo.Tech_Haven_Orders
 GROUP BY 
-    Purchase_Platform                                   -- Group by Purchase Platform
+    Purchase_Platform
 ORDER BY 
-    customer_count DESC;                               -- Order by the number of customers in descending order
+    customer_count DESC;
 
 -- 6. What is the total number of orders per year for each product? Clean up product names when grouping and return in alphabetical order after sorting by months.
 
 SELECT 
-    YEAR(o.Purchase_TS) AS purchase_year,                      -- Extract the year from the purchase timestamp and label it as 'purchase_year'
-    REPLACE(o.Product, ' ', '') AS cleaned_product,              -- Clean up the product name by removing spaces
-    MONTH(o.Purchase_TS) AS purchase_month,                     -- Extract the month from the purchase timestamp and label it as 'purchase_month'
-    COUNT(o.Order_ID) AS total_orders                            -- Count the total number of orders for each product
+    YEAR(o.Purchase_TS) AS purchase_year,
+    REPLACE(o.Product, ' ', '') AS cleaned_product,
+    MONTH(o.Purchase_TS) AS purchase_month,
+    COUNT(o.Order_ID) AS total_orders
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders AS o                                  -- From the 'Tech_Haven_Orders' table (aliased as 'o')
+    [Tech Haven].dbo.Tech_Haven_Orders AS o
 GROUP BY 
-    YEAR(o.Purchase_TS),                                        -- Group by purchase year
-    REPLACE(o.Product, ' ', ''),                                 -- Group by the cleaned-up product name (with spaces removed)
-    MONTH(o.Purchase_TS)                                        -- Group by the purchase month
+    YEAR(o.Purchase_TS),
+    REPLACE(o.Product, ' ', ''),
+    MONTH(o.Purchase_TS)
 ORDER BY 
-    purchase_year ASC,                                          -- Order by purchase year in ascending order
-    purchase_month ASC,                                         -- Order by purchase month in ascending order
-    cleaned_product ASC;                                        -- Order by product name in alphabetical order
+    purchase_year ASC,
+    purchase_month ASC,
+    cleaned_product ASC;
 
 SELECT 
-    geo.region,                                                    -- Select the region from the Geo_Lookup table
-    AVG(DATEDIFF(day, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time -- Calculate the average delivery time (in days) for each region
+    geo.region,
+    AVG(DATEDIFF(day, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders AS o                                      -- From the Tech_Haven_Orders table (aliased as 'o')
+    [Tech Haven].dbo.Tech_Haven_Orders AS o
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Order_Status AS os                               -- Join the Tech_Haven_Order_Status table (aliased as 'os') on Order_ID
+    [Tech Haven].dbo.Tech_Haven_Order_Status AS os
     ON o.Order_ID = os.Order_ID
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Customers AS c                                   -- Join the Tech_Haven_Customers table (aliased as 'c') to get customer information
+    [Tech Haven].dbo.Tech_Haven_Customers AS c
     ON o.Customer_ID = c.Customer_ID
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Geo_Lookup AS geo                                -- Join the Tech_Haven_Geo_Lookup table (aliased as 'geo') to get region information
+    [Tech Haven].dbo.Tech_Haven_Geo_Lookup AS geo
     ON c.State = geo.state_name
 WHERE 
     (
-        (YEAR(o.Purchase_TS) = 2022 AND o.Purchase_Platform = 'Website')  -- Filter for products purchased on the website in 2022
+        (YEAR(o.Purchase_TS) = 2022 AND o.Purchase_Platform = 'Website')
         OR
-        (o.Purchase_Platform = 'Mobile App')                                     -- Filter for products purchased on mobile in any year
+        (o.Purchase_Platform = 'Mobile App')
     )
 GROUP BY 
-    geo.region                                                        -- Group by region to get the average delivery time for each region
+    geo.region
 ORDER BY 
-    avg_delivery_time DESC;                                           -- Order by average delivery time in descending order, so the region with the highest average comes first
+    avg_delivery_time DESC;
 
 --7. For products purchased in 2022 on the website or products purchased on mobile in any year, which region has the average highest time to deliver?
 
 SELECT 
-    geo.region,                                                    -- Select the region from the Geo_Lookup table
-    AVG(DATEDIFF(day, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time -- Calculate the average delivery time (in days) for each region
+    geo.region,
+    AVG(DATEDIFF(day, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time
 FROM 
-    [Tech Haven].dbo.Tech_Haven_Orders AS o                                      -- From the Tech_Haven_Orders table (aliased as 'o')
+    [Tech Haven].dbo.Tech_Haven_Orders AS o
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Order_Status AS os                               -- Join the Tech_Haven_Order_Status table (aliased as 'os') on Order_ID
+    [Tech Haven].dbo.Tech_Haven_Order_Status AS os
     ON o.Order_ID = os.Order_ID
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Customers AS c                                   -- Join the Tech_Haven_Customers table (aliased as 'c') to get customer information
+    [Tech Haven].dbo.Tech_Haven_Customers AS c
     ON o.Customer_ID = c.Customer_ID
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Geo_Lookup AS geo                                -- Join the Tech_Haven_Geo_Lookup table (aliased as 'geo') to get region information
+    [Tech Haven].dbo.Tech_Haven_Geo_Lookup AS geo
     ON c.State = geo.state_code
 WHERE 
     (
-        (YEAR(o.Purchase_TS) = 2022 AND o.Purchase_Platform = 'Website')  -- Filter for products purchased on the website in 2022
+        (YEAR(o.Purchase_TS) = 2022 AND o.Purchase_Platform = 'Website')
         OR
-        (o.Purchase_Platform = 'Mobile')                                     -- Filter for products purchased on mobile in any year
+        (o.Purchase_Platform = 'Mobile')
     )
 GROUP BY 
-    geo.region                                                        -- Group by region to get the average delivery time for each region
+    geo.region
 ORDER BY 
-    avg_delivery_time DESC;                                           -- Order by average delivery time in descending order, so the region with the highest average comes first
+    avg_delivery_time DESC;
 
 
 --8. What was the refund rate and refund count for each product overall?
 
 SELECT 
     o.Product,
-    COUNT(CASE WHEN os.Refund_TS IS NOT NULL THEN 1 END) AS refund_count, -- Count refunded orders
+    COUNT(CASE WHEN os.Refund_TS IS NOT NULL THEN 1 END) AS refund_count,
     CAST(ROUND(
         (COUNT(CASE WHEN os.Refund_TS IS NOT NULL THEN 1 END) * 1.0 / COUNT(o.Order_ID)) * 100, 
         1
-    ) AS DECIMAL(10, 1)) AS refund_rate -- Calculate refund rate as a percentage, round to 1 decimal, and cast to DECIMAL
+    ) AS DECIMAL(10, 1)) AS refund_rate
 FROM 
     [Tech Haven].dbo.Tech_Haven_Orders AS o
 JOIN 
@@ -281,61 +281,61 @@ SELECT
 FROM 
     [Tech Haven].dbo.Tech_Haven_Order_Status r
 WHERE 
-    YEAR(r.Refund_TS) = 2021  -- Filter for refunds in 2021
+    YEAR(r.Refund_TS) = 2021
 GROUP BY 
-    YEAR(r.Refund_TS), MONTH(r.Refund_TS)  -- Group by year and month
+    YEAR(r.Refund_TS), MONTH(r.Refund_TS)
 ORDER BY 
-    refund_year, refund_month;  -- Sort by year and month
+    refund_year, refund_month;
 
 -- 14. For each region, what's the total number of customers and the total number of orders? Sort alphabetically by region.
 
 SELECT 
     geo.region,  -- Select the region
-    COUNT(DISTINCT c.Customer_ID) AS total_customers,  -- Count the distinct customers in each region
-    COUNT(o.Order_ID) AS total_orders  -- Count the total orders in each region
+    COUNT(DISTINCT c.Customer_ID) AS total_customers,
+    COUNT(o.Order_ID) AS total_orders
 FROM 
     [Tech Haven].dbo.Tech_Haven_Customers c
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Geo_Lookup geo ON c.state = geo.state_code  -- Join customers with their regions
+    [Tech Haven].dbo.Tech_Haven_Geo_Lookup geo ON c.state = geo.state_code
 LEFT JOIN 
-    [Tech Haven].dbo.Tech_Haven_Orders o ON c.Customer_ID = o.Customer_ID  -- Join orders with customers
+    [Tech Haven].dbo.Tech_Haven_Orders o ON c.Customer_ID = o.Customer_ID
 GROUP BY 
-    geo.region  -- Group the results by region
+    geo.region
 ORDER BY 
-    geo.region;  -- Sort by region alphabetically
+    geo.region;
 
 -- 15. What's the average time to deliver for each purchase platform?
 
 SELECT 
-    o.Purchase_Platform,  -- Select the purchase platform
-    AVG(DATEDIFF(DAY, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time  -- Calculate the average delivery time in days
+    o.Purchase_Platform,
+    AVG(DATEDIFF(DAY, o.Purchase_TS, os.Delivery_TS)) AS avg_delivery_time
 FROM 
     [Tech Haven].dbo.Tech_Haven_Orders o
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Order_Status os ON o.Order_ID = os.Order_ID  -- Join orders with order status
+    [Tech Haven].dbo.Tech_Haven_Order_Status os ON o.Order_ID = os.Order_ID
 WHERE 
-    os.Delivery_TS IS NOT NULL  -- Only include rows where delivery is not null
+    os.Delivery_TS IS NOT NULL
 GROUP BY 
-    o.Purchase_Platform  -- Group the results by purchase platform
+    o.Purchase_Platform
 ORDER BY 
-    o.Purchase_Platform;  -- Sort by purchase platform
+    o.Purchase_Platform;
 
 -- 16. What were the top 2 regions for iPhone sales in 2020?
 
 SELECT TOP 2 
     geo.region,  -- Select the region
-    SUM(o.Quantity_Ordered * o.Price_Each) AS total_sales  -- Calculate the total sales for iPhones
+    SUM(o.Quantity_Ordered * o.Price_Each) AS total_sales
 FROM 
     [Tech Haven].dbo.Tech_Haven_Orders o
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Customers c ON o.Customer_ID = c.Customer_ID  -- Join with the customers table to get the region
+    [Tech Haven].dbo.Tech_Haven_Customers c ON o.Customer_ID = c.Customer_ID
 JOIN 
-    [Tech Haven].dbo.Tech_Haven_Geo_Lookup geo ON c.State = geo.state_code  -- Join with the geo lookup table to get the region
+    [Tech Haven].dbo.Tech_Haven_Geo_Lookup geo ON c.State = geo.state_code
 WHERE 
-    o.Product = 'iPhone'  -- Filter for iPhone sales
-    AND YEAR(o.Purchase_TS) = 2020  -- Filter for 2020 only
+    o.Product = 'iPhone'
+    AND YEAR(o.Purchase_TS) = 2020
 GROUP BY 
-    geo.region  -- Group by region
+    geo.region
 ORDER BY 
-    total_sales DESC;  -- Sort by total sales in descending order
+    total_sales DESC;
 
