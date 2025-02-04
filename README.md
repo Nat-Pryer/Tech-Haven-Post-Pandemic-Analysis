@@ -52,7 +52,7 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 - The Macbook Pro Laptop, with its high AOV of $1,700, accounts for nearly a quarter of all revenue
 
-- The 27in 4K Gaming Monitor and Bose SoundSport Headphones both have notably higher refund rates, with 6.9% and 7.1%, respectively.
+- The 27in 4K Gaming Monitor and Bose SoundSport Headphones both have notably higher refund rates, at 6.9% and 7.1%, respectively.
 
 - Laptops and phones account for 62.9% of all revenue
 
@@ -145,4 +145,4 @@ Tech Haven’s analysis of approximately 214k orders across 2020-2023 reveals a 
 
 **Regional Growth Strategies**
 
-- **Focus on High Performing Regions**: Continue allocating resources to the South and West regions of the U.S. with regionalized marketing and product availability strategies tailored to local preferences.
+- **Boost Sales in Underperforming Regions**: Target the Midwest and Northeast regions of the U.S. by tailoring marketing strategies and product offerings to regional preferences.
